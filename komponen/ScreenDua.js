@@ -48,7 +48,7 @@ export default class App extends Component{
       var id = val.idPlayer
 
       return(
-        <ListItem key={i} avatar
+        <ListItem key={i} thumbnail
         onPress={()=>{
           this.props.navigation.navigate('HalTiga',{
             idplayer: this.props.navigation.getParam('idteam'),
@@ -57,7 +57,7 @@ export default class App extends Component{
           })
         }}>
           <Left>
-            <Thumbnail source= {foto ? {uri: foto} : {uri: foto2}}/>
+            <Thumbnail square source= {foto ? {uri: foto} : {uri: foto2}}/>
           </Left>
           <Body>
             <Text>{nama}</Text>

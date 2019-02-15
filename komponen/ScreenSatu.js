@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import {Text, View} from 'react-native';
 import {Container, Header, Left, Body, Right, Icon,
   Item, Input, Content, Footer, Button, Text, List, ListItem, Thumbnail} from 'native-base'
 import {Alert} from 'react-native'
@@ -45,7 +44,7 @@ export default class App extends Component{
       var id = val.idTeam
 
       return(
-        <ListItem key={i} avatar
+        <ListItem key={i} thumbnail
         onPress={()=>{
           this.props.navigation.navigate('HalDua',{
             idteam: id,
@@ -53,7 +52,7 @@ export default class App extends Component{
           })
         }}>
           <Left>
-            <Thumbnail source= {logo ? {uri: logo} : {uri: logo2}}/>
+            <Thumbnail square source= {logo ? {uri: logo} : {uri: logo2}}/>
           </Left>
           <Body>
             <Text>{nama}</Text>

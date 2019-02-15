@@ -48,7 +48,7 @@ export default class App extends Component{
 
     return (
       <Container>
-        <Content style={{marginTop: 10}}>
+        <Content>
         <Card>
             <CardItem>
               <Left>
